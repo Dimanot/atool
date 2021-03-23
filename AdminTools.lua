@@ -48,8 +48,8 @@ struct stKillInfo
 
 update_state = false
 
-local script_vers = 1
-local script_vers_text = "1.00"
+local script_vers = 2
+local script_vers_text = "1.05"
 
 local update_url = "https://raw.githubusercontent.com/Dimanot/atool/main/AdminTools.ini" -- тут тоже свою ссылку
 local update_path = "moonloader/config/AdminTools.ini" -- и тут свою ссылку
@@ -1118,7 +1118,7 @@ function main()
     end)
     sampRegisterChatCommand('stmp', function(text)
         if text ~= '' then
-            sampSendChat(string.format("/aad [Info] Сейчас пройдет мероприятие под названием '%s', желающие >> /gomp", text))
+            sampSendChat(string.format("/aad [Info] Сейчас пройдет мероприятие под названием обосрись '%s', желающие >> /gomp", text))
         else
             sampAddChatMessage('{FF0000}[Ошибка] {FF8C00}Вы не ввели название мероприятия.', stColor)
         end
